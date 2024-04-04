@@ -2,7 +2,7 @@ def main():
     # MY code has gone here \|/
     board = initialiseBoard()
     displayBoard(board)
-
+    #user input to try
     while True:
         user_input1=("pls enter the collom u want to place in.")
             
@@ -10,6 +10,8 @@ def main():
         board[2][5] = 'O'
         displayBoard(board)
     
+    
+#this is board
 def initialiseBoard():
     board = []
     for _ in range(6):
@@ -25,3 +27,11 @@ def displayBoard(board):
     print()
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+  

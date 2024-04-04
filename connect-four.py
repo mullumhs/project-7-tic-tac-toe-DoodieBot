@@ -2,13 +2,18 @@ def main():
     # MY code has gone here \|/
     board = initialiseBoard()
     displayBoard(board)
+
+    while True:
+        user_input1=("pls enter the collom u want to place in.")
+            
+        board[3][4] = 'X'
+        board[2][5] = 'O'
+        displayBoard(board)
     
 def initialiseBoard():
     board = []
     for _ in range(6):
-        row = []
-        for _ in range(7):
-            row.append('-')
+        row = ['-','-','-','-','-','-','-']
         board.append(row)
     return board
     

@@ -37,4 +37,9 @@ while True:
             player_count += 1
             break
         
+    # win check 
+    for row in range(6):
+        for col in range(4):
+            if board[row][col+1]==board[row][col+2]==board[row][col+3] and not board[row][col+3] =='-':
+
     print_board()

@@ -13,12 +13,7 @@ def print_board():
         print()
 
 initialise_board()
-print_board()
-player_count = 1
-while True: 
-    token = 'X'
-    if player_count % 2 == 0:
-        token = 'O'
+
 #validate that input.
     choice = input("Input colum number between 1 and 7: ")
     while True:

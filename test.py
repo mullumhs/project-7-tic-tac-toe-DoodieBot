@@ -13,6 +13,13 @@ def print_board():
         print()
 
 initialise_board()
+print_board()
+player_count = 1
+while True: 
+    token = 'X'
+    if player_count % 2 == 0:
+        token = 'O'
+
 
 #validate that input.
     choice = input("Input colum number between 1 and 7: ")
@@ -36,5 +43,6 @@ initialise_board()
     for row in range(6):
         for col in range(4):
             if board[row][col+1]==board[row][col+2]==board[row][col+3] and not board[row][col+3] =='-':
-
-    print_board()
+                print("u win")
+                break 
+    print_board() 
